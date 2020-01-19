@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.0'
+ruby '2.6.2'
 
 gem 'rails', '~> 6.0.0.rc1'
 
@@ -17,7 +17,8 @@ gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+# gem 'webpacker', '~> 4.0'
+gem 'webpacker', github: 'rails/webpacker'
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
@@ -33,8 +34,6 @@ gem 'devise'
 
 # Json Api Netflix
 gem 'fast_jsonapi', git: "https://github.com/Netflix/fast_jsonapi", branch: "dev"
-
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

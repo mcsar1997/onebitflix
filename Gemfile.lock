@@ -6,6 +6,15 @@ GIT
     fast_jsonapi (1.5)
       activesupport (>= 4.2)
 
+GIT
+  remote: https://github.com/rails/webpacker.git
+  revision: c7292e9a1e158e5fc9ec3026256cf7a42d70f549
+  specs:
+    webpacker (4.2.2)
+      activesupport (>= 4.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -188,10 +197,6 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webpacker (4.2.2)
-      activesupport (>= 4.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 4.2)
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
@@ -217,7 +222,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
-  webpacker (~> 4.0)
+  webpacker!
 
 RUBY VERSION
    ruby 2.6.2p47
