@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bundle check || bundle update
+bundle check || bundle install || bundle update
 
 yarn install
 >&2 echo "=========== YARN RUNNED"
@@ -28,4 +28,6 @@ fi
 bundle exec rake db:seed
 >&2 echo "=========== DATABASE SEEDED"
 
-bundle exec rails s -p 3000 -b '0.0.0.0'
+# bundle exec rails s -p 3000 -b '0.0.0.0'
+
+sleep infinity

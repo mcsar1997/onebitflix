@@ -17,6 +17,7 @@ RUN chmod +x start-dev.sh
 
 RUN gem install bundler
 
-RUN bundle install 
+ENV GEM_HOME="/usr/local/bundle"
+ENV PATH $GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
 
 ENTRYPOINT ["./start-dev.sh"]

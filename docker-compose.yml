@@ -18,6 +18,7 @@ services:
   web:
     container_name: onebitflix-backend
     build: .
+    tty: true
     volumes:
       - .:/onebitflix
     ports:
