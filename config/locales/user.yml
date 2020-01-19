@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+      errors:
+        models:
+          user:
+            attributes:
+              email:
+                taken: já está em uso.
+              password_confirmation:
+                confirmation: não é a mesma.
